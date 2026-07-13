@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth Medina</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    
+    <header class="header">
+        <div><a class="name">Elizabeth Medina</a></div>
+
+        <nav class="navbar">
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <a class="nav-links" href="home.html">About Me</a>
+            <a class="nav-links" href="notes.html">Notes</a>
+            <a class="nav-links" href="resources.html">Resources</a>
+            <a class="nav-links" href="art.html">Art</a>
+        </nav>
+
+    </header>
+
+    <section class="hamburger-active" id="hamburger-active">
+        <div>
+            <h2><a href="home.html">About Me</a></h2><br>
+            <h2><a href="notes.html">Notes</a></h2><br>
+            <h2><a href="resources.html">Resources</a></h2><br>
+            <h2><a href="art.html">Art</a></h2>
+        </div>
+    </section>
+
+    <div id="main-content">
+
+        <section class="art">
+            <h1>Art</h1>
+
+            <div class="divided">
+                <h2>Science Inspired Art</h2>
+                <span class="divider"></span>
+            </div>
+
+            <div class="art-block">
+                <div class="art-grid">
+
+                    <div class="art-item">
+                        <div class="art-img rabbit-hole">
+                            <div class="art-box">
+                                <img src="photos/Rabbit_Hole.png">
+                            </div>
+                        </div>
+                        <div class="art-desc">
+                            <h3>Rabbit Hole<br></h3>
+                        </div>
+                    </div>
+
+                    <div class="art-item">
+                        <div class="art-img superposition">
+                            <div class="art-box">
+                                <img src="photos/Superposition.png">
+                            </div>
+                        </div>
+                        <div class="art-desc">
+                            <h3>Superposition<br></h3>
+                        </div>
+                    </div>
+
+                    <div class="art-item">
+                        <div class="art-img nv-3d">
+                            <div class="art-box">
+                                <img src="photos/3d_nv.jpg">
+                            </div>
+                        </div>
+                        <div class="art-desc">
+                            <h3>3D Printed NV Center</h3>
+                            <h4><a href="files/NV_print.3mf">Print file</a> <br class="small">(modified from <a href="https://www.printables.com/model/875648-ball-stick-molecular-model-set">here</a>)</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="divided">
+                <h2>Daily Princetonian Highlights</h2>
+                <span class="divider"></span>
+            </div>
+
+            <div class="art-block">
+                <div class="art-grid">
+
+                    <div class="art-item">
+                        <div class="art-img prince">
+                            <div class="art-box">
+                                <img src="photos/Meeting_New_People.png">
+                            </div>
+                        </div>
+                        <div class="art-desc">
+                            <h3><a href="https://www.dailyprincetonian.com/article/2023/09/princeton-prospect-cartoon-lifestyle-first-freshmen-year-advice-princeton-life">The 5 things all first-years should know (article)</a></h3>
+                        </div>
+                    </div>
+
+                    <div class="art-item">
+                        <div class="art-img prince">
+                            <div class="art-box">
+                                <img src="photos/Candy_Hearts.png">
+                            </div>
+                        </div>
+                        <div class="art-desc">
+                            <h3><a href="https://www.dailyprincetonian.com/article/2022/02/candy-hearts-cartoon">Candy Hearts</a></h3>
+                        </div>
+                    </div>
+
+                    <div class="art-item">
+                        <div class="art-img prince">
+                            <div class="art-box">
+                                <img src="photos/Cold(ture)_Shock.png">
+                            </div>
+                        </div>
+                        <div class="art-desc">
+                            <h3><a href="https://www.dailyprincetonian.com/article/2022/01/cold-ture-shock-cartoon">Cold(ture) Shock</a></h3>
+                        </div>
+                    </div>
+
+                    <div class="art-item">
+                        <div class="art-img prince">
+                            <div class="art-box">
+                                <img src="photos/Scooter_Ban.png">
+                            </div>
+                        </div>
+                        <div class="art-desc">
+                            <h3><a href="https://www.dailyprincetonian.com/article/2023/09/princeton-cartoon-scooter-ban">Scooter Ban</a></h3>
+                        </div>
+                    </div>
+
+                    <div class="art-item">
+                        <div class="art-img prince">
+                            <div class="art-box">
+                                <img src="photos/Relativity.png">
+                            </div>
+                        </div>
+                        <div class="art-desc">
+                            <h3><a href="https://www.dailyprincetonian.com/article/2022/04/relativity-cartoon-princeton">Relativity</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+
+        </section>
+
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const hamburger_active = document.getElementById('hamburger-active');
+    const main_content = document.getElementById('main-content');
+    const body = document.getElementById("body")
+
+    hamburger.addEventListener('click', () => {
+
+        display_status = window.getComputedStyle(hamburger_active, null).display;
+
+        if (display_status === "none") {
+            hamburger_active.style.display = "flex";
+            main_content.ariaHidden = "true";
+            body.style.overflow = "hidden";
+        }
+        else if (display_status === "flex") {
+            hamburger_active.style.display = "none";
+            main_content.ariaHidden = "false";
+            body.style.overflow = "auto";
+        }
+        
+    });
+</script>

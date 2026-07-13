@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth Medina</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+
+    <header class="header">
+        <div><a class="name">Elizabeth Medina</a></div>
+
+        <nav class="navbar">
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <a class="nav-links" href="home.html">About Me</a>
+            <a class="nav-links" href="notes.html">Notes</a>
+            <a class="nav-links" href="resources.html">Resources</a>
+            <a class="nav-links" href="art.html">Art</a>
+        </nav>
+
+    </header>
+
+    <section class="hamburger-active" id="hamburger-active">
+        <div>
+            <h2><a href="home.html">About Me</a></h2><br>
+            <h2><a href="notes.html">Notes</a></h2><br>
+            <h2><a href="resources.html">Resources</a></h2><br>
+            <h2><a href="art.html">Art</a></h2>
+        </div>
+    </section>
+
+    <div id="main-content">
+
+        <section class="notes">
+            <h1>Notes</h1>
+
+            <div class="divided">
+                <h2>Quantum <br class="small-notes">Notebooks</h2>
+                <span class="divider"></span>
+            </div>
+
+            <div class="note-block">
+                <div class="note-item">
+                    <div class="notebook-img">
+                        <a href="files/QM_sprk.pdf"><img src="photos/QMI.png"></a>
+                    </div>
+                    <div class="notebook-desc">
+                        <h3>MIT Quantum Physics I<br>Sparknotes</h3>
+                        <p><a href="https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/">Source content</a></p>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <div class="notebook-img">
+                        <a href="files/QM_II_sprk.pdf"><img src="photos/QMII.png"></a>
+                    </div>
+                    <div class="notebook-desc">
+                        <h3>MIT Quantum Physics II<br>Sparknotes</h3>
+                        <p><a href="https://ocw.mit.edu/courses/8-05-quantum-physics-ii-fall-2013/">Source content</a></p>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <div class="notebook-img">
+                        <a href="files/Density_mat.pdf"><img src="photos/DM.png"></a>
+                    </div>
+                    <div class="notebook-desc">
+                        <h3>Density Matrices for<br>Quantum Information</h3>
+                        <p><a href="https://www.youtube.com/watch?v=CeK9ry8G8HQ">Source content</a></p>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <div class="notebook-img">
+                        <a href="files/q_comp.pdf"><img src="photos/QC.png"></a>
+                    </div>
+                    <div class="notebook-desc">
+                        <h3>Quantum Computing<br>(Unfinished)</h3>
+                        <p><a href="https://www.youtube.com/watch?v=Z1uoz_8dLH0&list=PL74Rel4IAsETUwZS_Se_P-fSEyEVQwni7">Source content</a></p>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <div class="notebook-img">
+                        <a href="files/q_optics.pdf"><img src="photos/qoptics.png"></a>
+                    </div>
+                    <div class="notebook-desc">
+                        <h3>Quantum Optics</h3>
+                        <p><a href="https://www.youtube.com/watch?v=LoyZdDRgfNY&list=PL066-JQIrxrsBhy-D-8xAzMQBMcK8zEcy">Source content</a></p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="divided">
+                <h2>Additional <br class="small-notes">Notebooks</h2>
+                <span class="divider"></span>
+            </div>
+
+            <div class="note-block">
+                <div class="note-item">
+                    <div class="notebook-img">
+                        <a href="files/Multi_sprk.pdf"><img src="photos/Multi.png"></a>
+                    </div>
+                    <div class="notebook-desc">
+                        <h3>Multivariable Calculus<br>Sparknotes</h3>
+                        <p><a href="https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx">Source content</a></p>
+                    </div>
+                </div>
+
+                <div class="note-item">
+                    <div class="notebook-img">
+                        <a href="files/EM_sprk.pdf"><img src="photos/EM.png"></a>
+                    </div>
+                    <div class="notebook-desc">
+                        <h3>Electricity and Magnetism<br>Sparknotes</h3>
+                        <p>Source content <br>
+                        <a href="https://mitxonline.mit.edu/courses/course-v1:MITxT+8.02.1x/">Pt I</a>, 
+                        <a href="https://mitxonline.mit.edu/courses/course-v1:MITxT+8.02.2x/">Pt II</a>, 
+                        <a href="https://mitxonline.mit.edu/courses/course-v1:MITxT+8.02.3x/">Pt III</a></p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        </section>
+
+    </div>
+  
+
+</body>
+</html>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const hamburger_active = document.getElementById('hamburger-active');
+    const main_content = document.getElementById('main-content');
+    const body = document.getElementById("body")
+
+    hamburger.addEventListener('click', () => {
+
+        display_status = window.getComputedStyle(hamburger_active, null).display;
+
+        if (display_status === "none") {
+            hamburger_active.style.display = "flex";
+            main_content.ariaHidden = "true";
+            body.style.overflow = "hidden";
+        }
+        else if (display_status === "flex") {
+            hamburger_active.style.display = "none";
+            main_content.ariaHidden = "false";
+            body.style.overflow = "auto";
+        }
+        
+    });
+</script>
+
+

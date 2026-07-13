@@ -1,0 +1,585 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Font *******************************************/
+
+body {
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* Header and Navbar style *******************************************/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2% 9%;
+    background: #A51C30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.name {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.navbar a:hover{
+    color: pink;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  /* transition: 0.3s; */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+
+}
+
+.hamburger-active {
+    z-index: 99;
+    background-color: #A51C30;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: -8px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hamburger-active a{
+    color: white;
+    font-weight: 300;
+}
+
+.hamburger-active a:hover{
+    color: pink;
+}
+
+/* "Footer" style *******************************************/
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1% 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 0;
+    color: white;
+}
+
+@media (max-width: 980px) {
+    .footer {
+        display:none;
+    }
+}
+
+/* Divider line *******************************************/
+
+/*
+Source - https://stackoverflow.com/a/37120036
+Posted by Jacob G, modified by community. See post 'Timeline' for change history
+Retrieved 2026-06-30, License - CC BY-SA 4.0
+*/
+
+.divided {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divider {
+  flex-grow: 1;
+  border-bottom: 1px solid rgb(157, 157, 157);
+  margin: 10px
+}
+
+/* Intro content style *******************************************/
+
+.intro {
+    height: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    padding-top: 30vh;
+    padding-left: 12%;
+    padding-right: 12%;
+    /* padding-bottom: 10em; */
+    /* padding: 30px 12% 0; */
+}
+
+.intro-info {
+    max-width: 800px;
+}
+
+.intro-info h1 {
+    font-size: 50px;
+}
+
+.intro-info h3 a {
+    color: #A51C30;
+}
+
+.intro-info h3 a:hover {
+    border-bottom: 3px solid; 
+}
+
+.intro-info p {
+    font-size: 20px;
+    /* margin: 25px 0 30px; */
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 250px;
+}
+
+.small {
+    display: none;
+}
+
+.profile-img-small {
+        display: none;
+    }
+
+@media (max-width: 665px) {
+    .wide {
+        display: none;
+    }
+
+    .small {
+        display: block;
+    }
+
+    .profile-img-small {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.transition {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* Research content style *******************************************/
+
+.research {
+    justify-content: center;
+    padding-top: 30vh;
+    padding-left: 12%;
+    padding-right: 12%;
+    width: 100%;
+}
+
+.research h1 {
+    font-size: 50px;
+}
+
+@media (max-width: 665px) {
+
+    .research h4 {
+        margin-top: 0;
+    }
+}
+
+.research-info a {
+    color: black;
+}
+
+.research-info a:hover {
+    color: #A51C30;
+    border-bottom: 3px solid #A51C30; 
+}
+
+.research-item {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 4em;
+    /* gap: 2em; */
+    /* padding: 1em; */
+    margin: 1em 0;
+}
+
+.research-img img {
+    max-width: 150px;
+    width: 15vw;
+    position: relative;
+    margin-top: 1em;
+}
+
+.presentations li {
+    font-size: 17px;
+}
+
+.presentations a{
+    color: #A51C30;
+    border-bottom: 3px solid #a51c3100; 
+}
+
+.presentations a:hover{
+    border-bottom: 1.5px solid #A51C30; 
+}
+
+.toggle-pres {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    /* .presentations divider {
+        display: none;
+    } */
+
+    .toggle-pres {
+        display: flex;
+    }
+}
+
+.research-info p {
+    font-size: 20px;
+}
+
+.research-info span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentations h3{
+    border-bottom: 3px solid #a51c3100; 
+}
+
+.presentations h3:hover{
+    color: #A51C30;
+    border-bottom: 3px solid #A51C30; 
+}
+
+.icon {
+    width: 10%;
+}
+
+/* Teaching and Outreach style *******************************************/
+
+.teach-outreach {
+    justify-content: center;
+    padding-top: 10vh;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 10vh;
+    width: 100%;
+}
+
+.teach-outreach h1 {
+    font-size: 50px;
+}
+
+.teach-outreach li {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.teach-outreach a{
+    font-weight: 400;
+    color: #A51C30;
+    border-bottom: 3px solid #a51c3100; 
+}
+
+.teach-outreach a:hover{
+    color: #A51C30;
+    border-bottom: 3px solid #A51C30; 
+}
+
+@media (max-width: 445px) {
+
+    .teach-outreach ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+
+
+/* Notes style *******************************************/
+
+.notes {
+    justify-content: center;
+    padding-top: 30vh;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 10vh;
+    width: 100%;
+}
+
+.notes h1 {
+    font-size: 50px;
+    margin-bottom: 1vh;
+}
+
+.note-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.note-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh;
+}
+
+.notebook-img a{
+    display: flex;
+    justify-content: center;
+}
+
+.notebook-img img {
+    width: 12vw;
+    margin-bottom: 1em;
+}
+
+.small-notes {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    .note-block {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .notebook-img img {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .note-block {
+        grid-template-columns: 1fr;
+    }
+
+    .notebook-img img {
+        width: 40vw;
+    }
+
+    .small-notes {
+        display: block;
+    }
+}
+
+.notebook-img img:hover {
+    filter: drop-shadow(10px 7px 2px #606060)
+}
+
+.notebook-desc {
+    text-align: center;
+}
+
+.notebook-desc h3{
+    margin: 0;
+    font-weight: 500;
+}
+
+.notes h2 {
+    font-weight: 400;
+}
+
+.notebook-desc a, .notebook-desc p{
+    font-weight: 500;
+    color: #A51C30;
+}
+
+.notebook-desc a:hover {
+    border-bottom: 3px solid #A51C30;
+}
+
+@media (max-width: 400px) {
+
+    .small-resources {
+        display: none;
+    }
+
+}
+
+/* Art style *******************************************/
+
+.art {
+    justify-content: center;
+    padding-top: 30vh;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 10vh;
+    width: 100%;
+}
+
+.art h1 {
+    font-size: 50px;
+    margin-bottom: 1vh;
+}
+
+.art h2 {
+    font-weight: 400;
+}
+
+.art h3 {
+    margin-bottom: 5px;
+}
+
+.art h4 {
+    margin: 0px;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.art-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh;
+}
+
+.art-box {
+    display: flex;
+    justify-content: center;
+}
+
+.art-desc {
+    text-align: center;
+}
+
+.rabbit-hole img{
+        width: 280px;
+    }
+
+.superposition img{
+    width: 421px;
+}
+
+.nv-3d img{
+    width: 280px;
+}
+
+
+@media (max-width: 650px) {
+
+    .rabbit-hole img{
+        width: 80%;
+    }
+
+    .superposition img {
+        width: 90%;
+    }
+
+    .nv-3d img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .art-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.prince img{
+    width: 90%;
+}
+
+.art a{
+    color: #A51C30;
+    border-bottom: 3px solid #a51c3100; 
+}
+
+.art a:hover{
+    color: #A51C30;
+    border-bottom: 3px solid #A51C30; 
+}
+
+
+/* Resource style *******************************************/
+
+.resources {
+    justify-content: center;
+    padding-top: 30vh;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 10vh;
+    width: 100%;
+}
+
+.resources h1 {
+    font-size: 50px;
+    margin-bottom: 1vh;
+}
+
+.resources h2 {
+    font-weight: 400;
+}
+
+.resources li {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.resources a{
+    font-weight: 400;
+    color: #A51C30;
+    border-bottom: 3px solid #a51c3100; 
+}
+
+.resources a:hover{
+    color: #A51C30;
+    border-bottom: 3px solid #A51C30; 
+}

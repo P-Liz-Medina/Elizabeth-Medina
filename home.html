@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth Medina</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <header class="header">
+        <div><a class="name">Elizabeth Medina</a></div>
+
+        <nav class="navbar">
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <a class="nav-links" href="home.html">About Me</a>
+            <a class="nav-links" href="notes.html">Notes</a>
+            <a class="nav-links" href="resources.html">Resources</a>
+            <a class="nav-links" href="art.html">Art</a>
+        </nav>
+
+    </header>
+
+    <section class="hamburger-active" id="hamburger-active">
+        <div>
+            <h2><a href="home.html">About Me</a></h2><br>
+            <h2><a href="notes.html">Notes</a></h2><br>
+            <h2><a href="resources.html">Resources</a></h2><br>
+            <h2><a href="art.html">Art</a></h2>
+        </div>
+    </section>
+
+    <div id="main-content">
+
+        <section class="intro">
+            <div class="intro-info">
+                <div class="profile-img-small">
+                    <img src="photos/Profile_Picture.png" style="width: 30vh">
+                </div>
+                <h1>Elizabeth Medina</h1>
+                <h3><a href="https://www.nsfgrfp.org/">NSF GRFP Fellow</a> | <a href="https://quantum.harvard.edu/graduate-studies">QSE PhD @ Harvard</a> | <a href="https://ece.princeton.edu/">Princeton ECE '24</a></h3>
+                <p>Elizabeth is a PhD student in Harvard University's Quantum Science and Engineering (QSE) program,  
+                    advised by Mikhail Lukin. Driven by a love for quantum and a fascination with biology, she is 
+                    developing technologies that capitalize on quantum physics of nitrogen-vacancy (NV) centers to 
+                    improve the way scientists study biological samples.
+                </p>
+            </div>
+            <div class="profile-img wide">
+                <img src="photos/Profile_Picture.png">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h1>v</h1>
+        </footer>
+
+        <section class="research">
+            <h1>Research</h1>
+            <div class="research-item">
+                <div class="research-img wide">
+                    <img src="photos/NV.png">
+                </div>
+                <div class="research-info">
+                    <span><h2>Harvard University <br class="small">| <a href="https://lukin.physics.harvard.edu/">PI: Mikhail Lukin</a></h2> <h4 class="wide">March '26 - Present</h4></span>
+                    <h4 class="small">March '26 - Present</h4>
+                    <p> Characterizing NV centers which will be used as quantum sensors in a nanoscale version of MRI, 
+                        designed for biological sensing. Writing code that accounts for thermal fluctuations in the 
+                        experimental setup, to stabilize NV qubit frequency and enable measurement protocols that provide 
+                        more accurate sensing.</p>
+                </div>
+            </div>
+            <div class="research-item">
+                <div class="research-img wide">
+                    <img src="photos/NV.png">
+                </div>
+                <div class="research-info">
+                    <span><h2>Harvard University <br class="small">| <a href="https://hongkunparklab.com/">PI: Hongkun Park</a></h2> <h4 class="wide">Sept '25 - March '26</h4></span>
+                    <h4 class="small">Sept '25 - March '26</h4>
+                    <p> Research rotation for QSE program. Collaborated with a post-doctoral fellow to optimize an experimental setup for addressing NVs. 
+                        Characterized NVs which will be used to probe the physics of two-dimensional materials.</p>
+                </div>
+            </div>
+            <div class="research-item">
+                <div class="research-img wide">
+                    <img src="photos/Fluxonium.png">
+                </div>
+                <div>
+                    <div class="research-info">
+                        <span><h2>Princeton University <br class="small">| <a href="https://houcklab.princeton.edu/">PI: Andrew Houck</a></h2> <h4 class="wide">Sept '23 - May '24</h4></span>
+                        <h4 class="small">Sept '23 - May '24</h4>
+                        <p> Implemented a radio frequency switch to reduce noise from amplifiers on a qubit drive line, 
+                            improving qubit single shot fidelity of a fluxonium qubit. Wrote code designed to auto-calibrate 
+                            the output power of a radio frequency qubit controller.</p>
+                    </div>
+                    <div class="presentations">
+                        <div class="divided">
+                            <h3 onclick="togglePres('houck-pres')"> Associated <br class="toggle-pres" >presentations: </h3>
+                            <span class="divider"></span>
+                            <h3 onclick="togglePres('houck-pres')">+</h3>
+                        </div>
+                        <div id="houck-pres" style="display:none">
+                            <ul>
+                                <li><a href="https://mediacentral.princeton.edu/media/Optimizing+Classical+Hardware+for+Superconducting+Qubit+Control%2C+Elizabeth+Medina%2C+UG+24+%28AAFC1283%29/1_lete0v92">Optimizing classical hardware for superconducting qubit control</a> (Princeton Research Day, 2024)</li>
+                                <li><a href="files/thesis_spring.pdf">Optimizing classical hardware for superconducting qubit control</a> (Princeton department of Electrical and Computer Engineering senior thesis poster session, 2024)</li>
+                                <li><a href="files/thesis_fall.pdf">Noise reduction in superconducting qubits using RF switch</a> (Princeton department of Electrical and Computer Engineering senior thesis poster session, 2023)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-item">
+                <div class="research-img wide">
+                    <img src="photos/Radar.png">
+                </div>
+                <div>
+                    <div class="research-info">
+                        <span><h2>Argonne National Laboratory <br class="small">| <a href="https://www.anl.gov/profile/alexander-heifetz">PI: Alexander Heifetz</a></h2> <h4 class="wide">March '23 - Aug '24</h4></span>
+                        <h4 class="small">March '23 - Aug '24</h4>
+                        <p> Explored the feasibility of optomechanical and atomic vapor cell approaches to frequency 
+                            conversion for quantum radar using COMSOL and Python, respectively. Contributed to a grant proposal 
+                            for funding from the National Nuclear Security Administration's Defense Nuclear Nonproliferation Research 
+                            and Development (NA-22) Office.</p>
+                    </div>
+                    <div class="presentations">
+                        <div class="divided">
+                            <h3 onclick="togglePres('argonne-pres')"> Associated <br class="toggle-pres" >presentations: </h3>
+                            <span class="divider"></span>
+                            <h3 onclick="togglePres('argonne-pres')">+</h3>
+                        </div>
+                        <div id="argonne-pres" style="display:none">
+                            <ul>
+                                <li>Microwave quantum radar based on Rydberg atoms (Society of Photographic Instrumentation Engineers Photonics West, 2024)</li>
+                                <li>Microwave quantum radar based on Rydberg atoms (American Nuclear Society Winter Meeting Advances in Nuclear Nonproliferation Technology and Policy Conference, 2023) </li>
+                                <li>Atom-Based Frequency Conversion for Microwave Quantum Radar Development (Argonne National Laboratory's Learning on the Lawn, 2023)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-item">
+                <div class="research-img wide">
+                    <img src="photos/Fpga.png">
+                </div>
+                <div>
+                    <div class="research-info">
+                        <span><h2>Univerity of Chicago <br class="small">| <a href="https://pme.uchicago.edu/faculty-research/lab-groups/awschalom-group">PI: David Awschalom</a></h2> <h4 class="wide">June '22 - Aug '22</h4></span>
+                        <h4 class="small">June '22 - Aug '22</h4>
+                        <p> Evaluated the performance of an FPGA, firmware, and Python package which would be used to control 
+                            solid-state qubits, such as NV and SiV centers in diamond. Set up the FPGA, navigated the package's custom 
+                            Python functions and underlying assembly commands, and employed a spectrum analyzer and SCPI commands to 
+                            determine the noise properties of the FPGA's signals. Created Jupyter notebooks for running Rabi and Ramsey experiments.</p>
+                    </div>
+                    <div class="presentations">
+                        <div class="divided">
+                            <h3 onclick="togglePres('awsch-pres')"> Associated <br class="toggle-pres" >presentations: </h3>
+                            <span class="divider"></span>
+                            <h3 onclick="togglePres('awsch-pres')">+</h3>
+                        </div>
+                        <div id="awsch-pres" style="display:none">
+                            <ul>
+                                <li>Evaluation of a Field-Programmable Gate Array for Quantum Optical Experiments (Virtual Leadership Alliance National Symposium, 2022)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="teach-outreach">
+            <h1>Teaching and Outreach</h1>
+                <ul>
+                    <li><b>Jan '26 - Present: </b> <a href="https://mudyeh.github.io/query/">Quantum Engineering Research and You</a> | <i>Content Curator</i></li>
+                    <li><b>Dec '25 - Present: </b> <a href="https://www.hqi-blog.com/">Harvard Quantum Initative Blog</a> | <i>Contributing Writer</i></li> 
+                    <li><b>Jun '21 - Present: </b> <a href="https://www.inspiritai.com/">Inspirit AI</a> | <i>Middle School Coding Instructor</i></li>
+                    <li><b>Sept '23 - May '24: </b><a href="https://psq.odus.princeton.edu/">Princeton Students in Quantum</a> | <i>Social and Community Outreach Chair</i></li>
+                    <li><b>Oct '22, Nov '23: </b><a href="https://swe.princeton.edu/"> Society of Women Engineers High School Engineering Colloquium</a> | <i>Volunteer</i></li>
+                    <li><b>Sept '22 - Dec '22:</b><a href="https://ece.princeton.edu/courses/introduction-computing-programming-autonomous-vehicles"> ECE115, Introduction to Computing: Programming Autonomous Vehicles</a> | <i>Undergraduate Teaching Assistant</i></li>
+                    <li><b>May '21 - May '23: </b><a href="https://ece.princeton.edu/">ECE Department</a> | <i>Student Ambassador</i></li>
+                    <li><b>Dec '20 - July '22: </b><a href="https://matriculate.org/">Matriculate</a> | <i>Advising Fellow</i></li>
+                    <li><b>Oct '20 - Oct '21: </b><a href="https://www.princetonwics.org/">Princeton Women in Computer Science</a> | <i>Community Outreach Co-Chair</i></li>
+                </ul>
+        </section>
+
+    </div>
+  
+
+</body>
+</html>
+
+
+<!-- Source: https://www.cs.ucr.edu/~vahid/usefulstuff/htmlaccordion.html -->
+<script>
+   function togglePres(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+   }
+</script>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const hamburger_active = document.getElementById('hamburger-active');
+    const main_content = document.getElementById('main-content');
+    const body = document.getElementById("body")
+
+    hamburger.addEventListener('click', () => {
+
+        display_status = window.getComputedStyle(hamburger_active, null).display;
+
+        if (display_status === "none") {
+            hamburger_active.style.display = "flex";
+            main_content.ariaHidden = "true";
+            body.style.overflow = "hidden";
+        }
+        else if (display_status === "flex") {
+            hamburger_active.style.display = "none";
+            main_content.ariaHidden = "false";
+            body.style.overflow = "auto";
+        }
+        
+    });
+</script>
+
+
+
+
+    
+
+
+
